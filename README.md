@@ -211,6 +211,15 @@ end
 @user.tag_list # => ["north", "east", "south", "west"]
 ```
 
+### Finding tags based on context
+
+You can find tags for a specific contest by using the ```for_context``` scope:
+
+```ruby
+ActsAsTaggableOn::Tag.for_context(:tags)
+ActsAsTaggableOn::Tag.for_context(:skills)
+```
+
 ### Finding most or least used tags
 
 You can find the most or least used tags by using:
